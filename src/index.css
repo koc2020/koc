@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'fontastique';
+  src: local("fontastique"), url(./fonts/fontastique/fontastique.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'epoco';
+  src: local("epoco"), url(./fonts/epoca-classic/Hoftype-EpocaClassic-Light.otf) format("truetype");
+}
+/*# sourceMappingURL=index.css.map */

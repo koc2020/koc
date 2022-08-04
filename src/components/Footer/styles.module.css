@@ -1,0 +1,19 @@
+.container {
+  width: inherit;
+  height: inherit;
+  background-image: url("https://i.pinimg.com/originals/0f/f2/97/0ff297c086b7ff4a5bd5a60303e58a5b.jpg");
+  background-position: 55% 65%;
+  background-size: cover;
+}
+
+.background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6vh 0;
+  background-color: rgba(40, 40, 40, 0.7);
+}
+/*# sourceMappingURL=styles.module.css.map */
