@@ -1,12 +1,14 @@
 import React from 'react';
-import { Box, HStack, Image, Text } from '@chakra-ui/react';
+import { Box, Image, Text } from '@chakra-ui/react';
 import whyus from '../../assets/images/whyus.png';
+import { Fade } from 'react-reveal';
+import styles from './styles.module.css';
 
 const WhyUs = () => {
   return (
-    <Box p={5} paddingInline={'75px'}>
+    <Box p={5} paddingInline={[0, '75px']}>
       <Box>
-        <Text fontSize={'xx-large'} ml={5}>
+        <Text fontSize={'xx-large'} ml={[0, 5]}>
           Why Us
         </Text>
         <Box
@@ -17,8 +19,15 @@ const WhyUs = () => {
           borderRadius={'full'}
         ></Box>
       </Box>
-      <HStack p={5}>
-        <Box w={'70%'} mr={10}>
+      <Box
+        className={styles.flexContainer}
+        w={'100%'}
+        justifyContent={'center'}
+        alignContent={'center'}
+        p={[0, 5]}
+        pt={5}
+      >
+        <Box className={styles.flexitem1} mr={10}>
           <Text>
             To meet the customer requirement, we follow the below process, which
             gives a quality product with our professional approach, builds a
@@ -35,10 +44,18 @@ const WhyUs = () => {
             enhance your business.
           </Text>
         </Box>
-        <Box display={'flex'} alignItems={'center'}>
-          <Image src={whyus} alt="Logo" w={'250px'} h={'250px'} />
-        </Box>
-      </HStack>
+        <Fade right>
+          <Box
+            w={{ base: '100%', md: 'max-content' }}
+            display={'flex'}
+            justifyContent={'center'}
+            alignItems={'center'}
+            mt={5}
+          >
+            <Image src={whyus} alt="Logo" w={'250px'} h={'250px'} />
+          </Box>
+        </Fade>
+      </Box>
     </Box>
   );
 };

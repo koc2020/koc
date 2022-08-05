@@ -3,8 +3,8 @@ import { Box, Spacer, Text, VStack } from '@chakra-ui/react';
 
 const Intro = () => {
   return (
-    <Box p={10} paddingInline={'75px'}>
-      <VStack paddingInline={5}>
+    <Box p={[5, 10]} paddingInline={'75px'}>
+      <VStack paddingInline={[0, 5]}>
         <Text>
           Kitchen 'O' Cant Equips has been a startup since 2021. Even though we
           are a startup, we have had robust industry knowledge for over three

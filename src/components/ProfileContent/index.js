@@ -3,7 +3,7 @@ import { Box, VStack, Spacer, Text } from '@chakra-ui/react';
 
 const ProfileContent = () => {
   return (
-    <Box p={[3, 10]} paddingInline={'75px'}>
+    <Box p={5} paddingInline={'75px'}>
       <Box>
         <Text fontSize={'xx-large'} ml={5}>
           Our Profile
@@ -16,7 +16,7 @@ const ProfileContent = () => {
           borderRadius={'full'}
         ></Box>
       </Box>
-      <VStack p={5}>
+      <VStack p={[0, 5]} pt={5}>
         <Text>
           Kitchen 'O' Cant Equips has been a startup since 2021. Even though we
           are a startup, we have had robust industry knowledge for over three

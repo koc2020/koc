@@ -11,41 +11,50 @@ import sselectri from '../../assets/images/equip/ss electrical products.png';
 import trolley from '../../assets/images/equip/trolleys.png';
 import washingequipment from '../../assets/images/equip/washing equipment.png';
 import './product_display_style.css';
-import { Box, Image, Link, Text } from '@chakra-ui/react';
+import { Box, Image, Text, Tooltip } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 const ProductDisplay = () => {
   const images = [
     {
       name: 'Cold Equipments',
       img: coldequip,
+      link: 'ColdEquips',
     },
     {
       name: 'Display Cabinet',
       img: displaycab,
+      link: 'Display',
     },
     {
       name: 'Hot Equipments',
       img: hotequip,
+      link: 'HotEquips',
     },
     {
       name: 'Kitchen Exhaust Systems',
       img: kitexhaust,
+      link: 'Exhaust',
     },
     {
       name: 'Pre-preparation Equipments',
       img: preprep,
+      link: 'Ppe',
     },
     {
       name: 'SS electrical Equipments',
       img: sselectri,
+      link: 'SSelectricalequips',
     },
     {
       name: 'Trolleys',
       img: trolley,
+      link: 'Trolley',
     },
     {
       name: 'Washing Equipments',
       img: washingequipment,
+      link: 'WashEquips',
     },
   ];
 
@@ -83,14 +92,15 @@ const ProductDisplay = () => {
     <Box
       p={10}
       height={'400px'}
-      paddingInline={'75px'}
+      paddingInline={{ base: '10px', md: '75px' }}
       display={'flex'}
       justifyContent="center"
       alignItems={'center'}
       bgColor={'#282828'}
+      overflowY={'hidden'}
       borderBottom={'5px solid #F6821F'}
     >
-      <Box w={['90%', '70%']}>
+      <Box w={{ base: '100%', md: '90%', lg: '70%' }}>
         <Slider {...settings}>
           {images.map((img, idx) => (
             <Box
@@ -100,24 +110,30 @@ const ProductDisplay = () => {
               className={idx === imageIndex ? 'slide activeSlide' : 'slide'}
             >
               {idx === imageIndex ? (
-                <Link>
-                  <Image
-                    src={img.img}
-                    alt={img.name}
-                    boxSize="500px"
-                    objectFit={'contain'}
-                    title={'Click Me'}
-                  />
-                  <Text
-                    w={'100%'}
-                    textAlign={'center'}
-                    pos={'absolute'}
-                    color={'white'}
-                    bottom={'18%'}
-                  >
-                    {img.name}
-                  </Text>
-                </Link>
+                <Tooltip
+                  label={'Click Me'}
+                  aria-label={'Click Me'}
+                  bg={'orange.500'}
+                  color={'white'}
+                >
+                  <Link to={`/product/${img.link}`}>
+                    <Image
+                      src={img.img}
+                      alt={img.name}
+                      boxSize="500px"
+                      objectFit={'contain'}
+                    />
+                    <Text
+                      w={'100%'}
+                      textAlign={'center'}
+                      pos={'absolute'}
+                      color={'white'}
+                      bottom={'18%'}
+                    >
+                      {img.name}
+                    </Text>
+                  </Link>
+                </Tooltip>
               ) : (
                 <>
                   <Image

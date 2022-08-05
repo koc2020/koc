@@ -59,7 +59,7 @@ const Navbar = () => {
             mr={[7, 0]}
           />
           <Box
-            w={'70vw'}
+            w={['100%', '70vw']}
             h={'100%'}
             mr={10}
             display={{ base: 'none', md: 'flex' }}
@@ -67,7 +67,11 @@ const Navbar = () => {
             alignItems={'flex-end'}
             flexDir={'column'}
           >
-            <HStack display={'flex'} justifyContent={'center'} w={'35%'}>
+            <HStack
+              display={'flex'}
+              justifyContent={'center'}
+              className={styles.flexContainer}
+            >
               <a href={pdf} download>
                 <Box
                   bgColor={'#f6821f'}
@@ -79,9 +83,11 @@ const Navbar = () => {
                   paddingInline={'5'}
                   borderRadius={'20px'}
                   cursor={'pointer'}
-                  mr={'20px'}
+                  title={'Click me'}
                 >
-                  <Text paddingRight={'10px'}>Get Brochure</Text>
+                  <Text paddingRight={'10px'} display={'block'}>
+                    Get Brochure
+                  </Text>
                   <FiDownload />
                 </Box>
               </a>

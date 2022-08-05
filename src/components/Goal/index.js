@@ -6,7 +6,7 @@ const Goal = () => {
   return (
     <Box p={5} paddingInline={'75px'}>
       <Box>
-        <Text fontSize={'xx-large'} ml={5}>
+        <Text fontSize={'xx-large'} ml={[1, 5]}>
           Our Goal
         </Text>
         <Box

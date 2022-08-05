@@ -1,14 +1,14 @@
 import React from 'react';
-import { Box, HStack, Text } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 
 const ContactComp = () => {
   return (
-    <Box p={10} paddingInline={'75px'}>
-      <HStack>
-        <Box w={'50%'} h={'100%'}>
+    <Box p={[5, 10]} paddingInline={'75px'}>
+      <Box display={{ base: 'block', md: 'flex' }}>
+        <Box w={{ base: '100%', md: '50%' }} h={'100%'}>
           <Box>
             <Box>
-              <Text fontSize={'x-large'} ml={5}>
+              <Text fontSize={'x-large'} ml={[0, 5]}>
                 <b>Address</b>
               </Text>
               <Box
@@ -19,7 +19,7 @@ const ContactComp = () => {
                 borderRadius={'full'}
               ></Box>
             </Box>
-            <Text p={5} fontSize={'medium'}>
+            <Text p={[0, 5]} pt={5} pb={5} fontSize={'medium'}>
               <b>Kitchen 'O' Cant Equips</b>
               <br />
               74, Thendral Nagar, Manali Main Road, Near Thiruthangal Nadar
@@ -29,7 +29,7 @@ const ContactComp = () => {
           </Box>
           <Box>
             <Box>
-              <Text fontSize={'x-large'} ml={5}>
+              <Text fontSize={'x-large'} ml={[0, 5]}>
                 <b>Contact</b>
               </Text>
               <Box
@@ -40,11 +40,11 @@ const ContactComp = () => {
                 borderRadius={'full'}
               ></Box>
             </Box>
-            <Text p={5} fontSize={'medium'}></Text>
+            <Text p={[0, 5]} pt={5} pb={5} fontSize={'medium'}></Text>
           </Box>
         </Box>
         <Box
-          w={'50%'}
+          w={{ base: '100%', md: '50%' }}
           display={'flex'}
           justifyContent={'center'}
           alignContent={'center'}
@@ -60,7 +60,7 @@ const ContactComp = () => {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </Box>
-      </HStack>
+      </Box>
     </Box>
   );
 };

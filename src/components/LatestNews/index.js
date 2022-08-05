@@ -4,9 +4,9 @@ import styles from './styles.module.css';
 
 const LatestNews = () => {
   return (
-    <Box p={10} paddingInline={'75px'}>
+    <Box p={[1, 10]} paddingInline={'75px'}>
       <Box>
-        <Text fontSize={'xx-large'} ml={10}>
+        <Text fontSize={'xx-large'} ml={[1, 10]}>
           Latest News
         </Text>
         <Box
@@ -17,7 +17,7 @@ const LatestNews = () => {
           borderRadius={'full'}
         ></Box>
       </Box>
-      <SimpleGrid minChildWidth="250px" spacing="40px" p={5}>
+      <SimpleGrid minChildWidth="250px" spacing="40px" p={[0, 5]} pt={5}>
         <Box h={'250px'} borderRadius={'base'} className={styles.shadow} p={5}>
           <Text fontSize={'x-large'} mb={[2, 4]}>
             Lorem Ipsum

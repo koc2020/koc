@@ -34,7 +34,7 @@ const Footer = () => {
   };
 
   return (
-    <Box h={'350px'}>
+    <Box>
       {show ? (
         <Fade bottom>
           <Box
@@ -65,10 +65,10 @@ const Footer = () => {
       ) : (
         <></>
       )}
-      <Box h={'325px'}>
+      <Box>
         <div className={styles.container}>
           <Box w={'100%'} h={'inherit'} className={styles.background}>
-            <Box w={'20vw'}>
+            <Box w={'20vw'} display={{ base: 'none', md: 'block' }}>
               <Text
                 fontSize={'x-large'}
                 color={'#f6821f'}
@@ -96,11 +96,14 @@ const Footer = () => {
               </VStack>
             </Box>
             <Stack direction={'row'}>
-              <Divider orientation="vertical" />
+              <Divider
+                orientation="vertical"
+                display={{ base: 'none', md: 'flex' }}
+              />
               <Box w={'40vw'}>
                 <VStack>
                   <Text
-                    w={'80%'}
+                    w={{ base: '90%', md: '80%' }}
                     fontSize={'x-large'}
                     color={'#f6821f'}
                     fontWeight={'semibold'}
@@ -109,11 +112,18 @@ const Footer = () => {
                   >
                     Contact
                   </Text>
-                  <Box display={'flex'} w={'90%'} justifyContent={'start'}>
-                    <Text fontSize={'24px'} pr={3}>
+                  <Box
+                    display={'flex'}
+                    w={{ base: '100%', md: '90%' }}
+                    justifyContent={'start'}
+                  >
+                    <Text fontSize={{ base: '20px', md: '24px' }} pr={3}>
                       <TiLocation style={{ color: '#f6921f' }} />
                     </Text>
-                    <Text color={'white'}>
+                    <Text
+                      color={'white'}
+                      fontSize={{ base: '13px', md: '15px' }}
+                    >
                       74, Thendral Nagar, Manali Main Road, Near Thiruthangal
                       Nadar College,
                       <br /> Selaivayal, Chennai, Tamil Nadu 600051.
@@ -125,10 +135,15 @@ const Footer = () => {
                     pt={3}
                     justifyContent={'flex-start'}
                   >
-                    <Text fontSize={'20px'} pr={3}>
+                    <Text fontSize={{ base: '16px', md: '20px' }} pr={3}>
                       <FaPhoneAlt style={{ color: '#f6921f' }} />
                     </Text>
-                    <Text color={'white'}>+91 98409 40123</Text>
+                    <Text
+                      color={'white'}
+                      fontSize={{ base: '13px', md: '15px' }}
+                    >
+                      +91 98409 40123
+                    </Text>
                   </Box>
                   <Box
                     display={'flex'}
@@ -136,28 +151,33 @@ const Footer = () => {
                     pt={3}
                     justifyContent={'flex-start'}
                   >
-                    <Text fontSize={'20px'} pr={3}>
+                    <Text fontSize={{ base: '16px', md: '20px' }} pr={3}>
                       <MdEmail style={{ color: '#f6921f' }} />
                     </Text>
-                    <Text color={'white'}>kocequips@outlook.com</Text>
+                    <Text
+                      color={'white'}
+                      fontSize={{ base: '13px', md: '15px' }}
+                    >
+                      kocequips@outlook.com
+                    </Text>
                   </Box>
                 </VStack>
               </Box>
             </Stack>
-            <Box w={'30vw'} pt={10}>
+            <Box w={{ md: '50vw', lg: '30vw' }} pt={10}>
               <Text
                 fontFamily={'fontastique'}
-                fontSize={'40px'}
+                fontSize={{ base: '20px', md: '30px', lg: '40px' }}
                 color={'#f6921f'}
                 textAlign={'end'}
                 textDecoration={'white underline'}
-                textUnderlineOffset={'12px'}
+                textUnderlineOffset={{ base: '6px', md: '9px', lg: '12px' }}
               >
                 Kitchen <span style={{ color: 'white' }}>'O'</span> Cant Equips
               </Text>
               <Text
                 fontFamily={'epoco'}
-                fontSize={'lg'}
+                fontSize={{ base: '10px', md: 'sm', lg: 'lg' }}
                 color={'white'}
                 textAlign={'end'}
               >
@@ -169,7 +189,7 @@ const Footer = () => {
                 display={'flex'}
                 justifyContent={'flex-end'}
                 color={'#f6821f'}
-                fontSize={'30px'}
+                fontSize={{ base: '25px', md: '30px' }}
               >
                 <a
                   href="https://api.whatsapp.com/send?phone=919500056773"

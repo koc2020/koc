@@ -31,3 +31,11 @@ $secondary: #f6821f;
   color: $primary;
   text-decoration: 2px underline solid $primary;
 }
+
+.flexContainer {
+  width: 100%;
+
+  @media only screen and (min-width: 1024px) {
+    display: 35%;
+  }
+}

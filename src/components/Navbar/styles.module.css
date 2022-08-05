@@ -35,4 +35,14 @@
   -webkit-text-decoration: 2px underline solid #282828;
           text-decoration: 2px underline solid #282828;
 }
+
+.flexContainer {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .flexContainer {
+    display: 35%;
+  }
+}
 /*# sourceMappingURL=styles.module.css.map */

@@ -7,7 +7,7 @@ const Team = () => {
   return (
     <Box p={5} paddingInline={'75px'}>
       <Box>
-        <Text fontSize={'xx-large'} ml={5}>
+        <Text fontSize={'xx-large'} ml={[1, 5]}>
           Our Team
         </Text>
         <Box
@@ -25,7 +25,7 @@ const Team = () => {
           center of attention to deliver a satisfying outcome to our customers.
         </Text>
         <Fade bottom>
-          <List p={5} spacing={3}>
+          <List p={[1, 5]} spacing={3}>
             <ListItem>
               <ListIcon as={TiArrowRightThick} color="orange.500" />
               Meet product quality.
