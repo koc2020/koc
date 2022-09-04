@@ -63,13 +63,13 @@ const Navbar = () => {
             h={'100%'}
             mr={10}
             display={{ base: 'none', md: 'flex' }}
-            justifyContent={'center'}
+            justifyContent={'flex-end'}
             alignItems={'flex-end'}
             flexDir={'column'}
           >
             <HStack
               display={'flex'}
-              justifyContent={'center'}
+              justifyContent={'flex-end'}
               className={styles.flexContainer}
             >
               <a href={pdf} download>
@@ -102,7 +102,7 @@ const Navbar = () => {
                 borderRadius={'20px'}
               >
                 <FaPhoneAlt />
-                <Text paddingLeft={'10px'}>+91 95000 56773</Text>
+                <Text paddingLeft={'10px'}>+91 98409 40123</Text>
               </Box>
             </HStack>
             ;

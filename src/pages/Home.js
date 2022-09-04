@@ -4,11 +4,13 @@ import LatestNews from '../components/LatestNews';
 import ProductDisplay from '../components/ProductDisplayHome';
 import Intro from '../components/Intro';
 import WhyUs from '../components/WhyUs';
+import SignatureProduct from '../components/SignatureProduct';
 
 const Home = () => {
   return (
     <div>
       <LatestNews />
+      <SignatureProduct />
       <ProductDisplay />
       <Intro />
       <WhyUs />

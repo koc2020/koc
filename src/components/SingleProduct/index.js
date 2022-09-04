@@ -8,8 +8,12 @@ const SingleProduct = ({ props }) => {
       display={{ base: 'block', md: 'flex' }}
       justifyContent={'center'}
     >
-      <Box w={{ base: '100%', md: '30%' }}>
-        <Image src={props.element.img} alt={props.element.name} />
+      <Box w={{ base: '100%', md: '30%' }} overflow={'hidden'} pr={5}>
+        <Image
+          src={props.element.img}
+          alt={props.element.name}
+          objectFit={'cover'}
+        />
       </Box>
       <Box w={{ base: '100%', md: '70%' }}>
         <Box>

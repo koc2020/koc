@@ -22,11 +22,12 @@ const Product = () => {
           Trolley: <Trolley />,
           Ppe: <Ppe />,
           HotEquips: <HotEquip />,
-          SSelectricalequips: <SSelectricals />,
+          Signatureequips: <SSelectricals />,
           ColdEquips: <Coldequip />,
           WashEquips: <WashEquip />,
           Exhaust: <Exhaust />,
           Display: <Display />,
+          AutomaticSteamBoiler: <SSelectricals />,
           undefined: <Coldequip />,
         }[product]
       }

@@ -1,0 +1,13 @@
+.flexContainer {
+  display: block;
+
+  @media only screen and (min-width: 1024px) {
+    display: flex;
+  }
+}
+.flexitem1 {
+  width: 100%;
+  @media only screen and (min-width: 1024px) {
+    width: 80%;
+  }
+}

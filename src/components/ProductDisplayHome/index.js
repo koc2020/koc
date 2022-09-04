@@ -10,8 +10,9 @@ import preprep from '../../assets/images/equip/pre-preparation equipment.png';
 import sselectri from '../../assets/images/equip/ss electrical products.png';
 import trolley from '../../assets/images/equip/trolleys.png';
 import washingequipment from '../../assets/images/equip/washing equipment.png';
+import pantry from '../../assets/images/equip/pantry and fastfood.png';
 import './product_display_style.css';
-import { Box, Image, Link, Text, Tooltip } from '@chakra-ui/react';
+import { Box, Image, Link, Text } from '@chakra-ui/react';
 
 const ProductDisplay = () => {
   const images = [
@@ -30,6 +31,7 @@ const ProductDisplay = () => {
       img: hotequip,
       link: 'HotEquips',
     },
+    { name: 'Pantry & Fast Foods', img: pantry, link: 'Pantry' },
     {
       name: 'Kitchen Exhaust Systems',
       img: kitexhaust,
@@ -41,9 +43,9 @@ const ProductDisplay = () => {
       link: 'Ppe',
     },
     {
-      name: 'SS electrical Equipments',
+      name: 'Signature Equipments',
       img: sselectri,
-      link: 'SSelectricalequips',
+      link: 'Signatureequips',
     },
     {
       name: 'Trolleys',
@@ -108,30 +110,23 @@ const ProductDisplay = () => {
               className={idx === imageIndex ? 'slide activeSlide' : 'slide'}
             >
               {idx === imageIndex ? (
-                <Tooltip
-                  label={'Click Me'}
-                  aria-label={'Click Me'}
-                  bg={'orange.500'}
-                  color={'white'}
-                >
-                  <Link href={`/product/${img.link}`}>
-                    <Image
-                      src={img.img}
-                      alt={img.name}
-                      boxSize="500px"
-                      objectFit={'contain'}
-                    />
-                    <Text
-                      w={'100%'}
-                      textAlign={'center'}
-                      pos={'absolute'}
-                      color={'white'}
-                      bottom={'18%'}
-                    >
-                      {img.name}
-                    </Text>
-                  </Link>
-                </Tooltip>
+                <Link href={`/product/${img.link}`} title={'Click Me'}>
+                  <Image
+                    src={img.img}
+                    alt={img.name}
+                    boxSize="500px"
+                    objectFit={'contain'}
+                  />
+                  <Text
+                    w={'100%'}
+                    textAlign={'center'}
+                    pos={'absolute'}
+                    color={'white'}
+                    bottom={'18%'}
+                  >
+                    {img.name}
+                  </Text>
+                </Link>
               ) : (
                 <>
                   <Image

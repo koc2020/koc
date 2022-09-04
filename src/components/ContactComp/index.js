@@ -40,7 +40,12 @@ const ContactComp = () => {
                 borderRadius={'full'}
               ></Box>
             </Box>
-            <Text p={[0, 5]} pt={5} pb={5} fontSize={'medium'}></Text>
+            <Text paddingInline={[0, 5]} pt={5} pb={1} fontSize={'medium'}>
+              +91 98409 40123
+            </Text>
+            <Text paddingInline={[0, 5]} pt={1} pb={5} fontSize={'medium'}>
+              kocequips@outlook.com
+            </Text>
           </Box>
         </Box>
         <Box

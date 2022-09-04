@@ -1,0 +1,22 @@
+.flexContainer {
+  display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+  .flexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.flexitem1 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .flexitem1 {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

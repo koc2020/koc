@@ -154,12 +154,14 @@ const Footer = () => {
                     <Text fontSize={{ base: '16px', md: '20px' }} pr={3}>
                       <MdEmail style={{ color: '#f6921f' }} />
                     </Text>
-                    <Text
-                      color={'white'}
-                      fontSize={{ base: '13px', md: '15px' }}
-                    >
-                      kocequips@outlook.com
-                    </Text>
+                    <Link href="mailto: kocequips@outlook.com">
+                      <Text
+                        color={'white'}
+                        fontSize={{ base: '13px', md: '15px' }}
+                      >
+                        kocequips@outlook.com
+                      </Text>
+                    </Link>
                   </Box>
                 </VStack>
               </Box>
@@ -192,10 +194,10 @@ const Footer = () => {
                 fontSize={{ base: '25px', md: '30px' }}
               >
                 <a
-                  href="https://api.whatsapp.com/send?phone=919500056773"
+                  href="https://api.whatsapp.com/send?phone=919994956773"
                   target="popup"
                 >
-                  <Box p={2.5} _hover={{ color: 'white' }} title={'9500056773'}>
+                  <Box p={2.5} _hover={{ color: 'white' }} title={'9994956773'}>
                     <FaWhatsapp />
                   </Box>
                 </a>
