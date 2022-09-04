@@ -8,19 +8,22 @@ const property = [
     imageUrl: DT,
     imageAlt: 'Dining Table',
     title: 'Dining Table',
-    description: '$1,900.00',
+    description:
+      'This is an contempoaray style dinning table for a pleasant and theme based dinning. It will be more comfortable for customers to have a fine dinning.',
   },
   {
     imageUrl: SC,
     imageAlt: 'Service Counter',
     title: 'Service Counter',
-    description: '$1,900.00',
+    description:
+      'Service counter for star dinning. This has multiple rows for storage for table serve products like water bottles, soft drinks, etc.',
   },
   {
     imageUrl: WB,
     imageAlt: 'Wash Basin',
     title: 'Wash Basin',
-    description: '$1,900.00',
+    description:
+      'Stainless Steel with 304 grade wash basin for hotel wash room. It has flexible taps which aids customers to wash as per their comfort.',
   },
 ];
 
@@ -29,7 +32,7 @@ const LatestNews = () => {
     <Box px={[1, 10]} pt={[1, 10]} paddingInline={'75px'}>
       <Box>
         <Text fontSize={'xx-large'} ml={[1, 10]}>
-          Latest News
+          Latest Update
         </Text>
         <Box
           mt={2}
@@ -78,12 +81,7 @@ const LatestNews = () => {
                 </Badge>
               </Box>
 
-              <Box>
-                {ele.description}
-                <Box as="span" color="gray.600" fontSize="sm">
-                  / wk
-                </Box>
-              </Box>
+              <Box>{ele.description}</Box>
             </Box>
           </Box>
         ))}

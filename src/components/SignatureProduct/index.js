@@ -4,6 +4,7 @@ import ASB from '../../assets/images/latestnews/AutomaticSteamBoiler.jpg';
 import styles from './styles.module.css';
 import { TiArrowRightThick } from 'react-icons/ti';
 import { Link } from 'react-router-dom';
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 const SignatureProduct = () => {
   return (
@@ -84,14 +85,18 @@ const SignatureProduct = () => {
           </Box>
         </Box>
       </Box>
-      <Text
-        textAlign={'center'}
+      <Box
         w={'100%'}
-        fontSize={'x-large'}
+        display={'flex'}
+        justifyContent={'center'}
         color={'orange.500'}
       >
-        Meet all safety line with precautionary measures
-      </Text>
+        <FaQuoteLeft />
+        <Text px={1} fontSize={'x-large'}>
+          Meet all safety line with precautionary measures
+        </Text>
+        <FaQuoteRight />
+      </Box>
     </Box>
   );
 };
