@@ -110,7 +110,7 @@ const ProductDisplay = () => {
               className={idx === imageIndex ? 'slide activeSlide' : 'slide'}
             >
               {idx === imageIndex ? (
-                <Link href={`/product/${img.link}`} title={'Click Me'}>
+                <Link href={`/koc/product/${img.link}`} title={'Click Me'}>
                   <Image
                     src={img.img}
                     alt={img.name}

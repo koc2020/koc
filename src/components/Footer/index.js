@@ -78,19 +78,19 @@ const Footer = () => {
                 UseFul Links
               </Text>
               <VStack mt={5} color={'white'} h={'inherit'} fontSize={'larger'}>
-                <Link href="/">
+                <Link href="/koc">
                   <Text cursor={'pointer'}>Home</Text>
                 </Link>
-                <Link href={'/profile'}>
+                <Link href={'/koc/profile'}>
                   <Text cursor={'pointer'}>Profile</Text>
                 </Link>
-                <Link href="/product">
+                <Link href="/koc/product">
                   <Text cursor={'pointer'}>Products</Text>
                 </Link>
-                <Link href="/about">
+                <Link href="/koc/about">
                   <Text cursor={'pointer'}>About Us</Text>
                 </Link>
-                <Link href="/contact">
+                <Link href="/koc/contact">
                   <Text cursor={'pointer'}>Contact</Text>
                 </Link>
               </VStack>

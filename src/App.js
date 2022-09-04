@@ -16,12 +16,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="profile" element={<Profile />} />
-            <Route path="product" element={<Product />}>
-              <Route path="/product/:product" element={<Product />} />
+            <Route path="/koc/profile" element={<Profile />} />
+            <Route path="/koc/product" element={<Product />}>
+              <Route path="/koc/product/:product" element={<Product />} />
             </Route>
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
+            <Route path="/koc/about" element={<About />} />
+            <Route path="/koc/contact" element={<Contact />} />
             <Route path="*" element={<Home />} />
           </Route>
         </Routes>

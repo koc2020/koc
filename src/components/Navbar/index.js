@@ -20,7 +20,7 @@ import { Link } from 'react-router-dom';
 const Links = ['Home', 'Profile', 'Product', 'About', 'Contact'];
 
 const NavLink = ({ children }) => (
-  <Link to={`/${children}`} className={styles.navhover}>
+  <Link to={`koc/${children}`} className={styles.navhover}>
     <Text
       px={2}
       py={1}
@@ -50,14 +50,16 @@ const Navbar = () => {
             bgColor={'orange.500'}
             onClick={isOpen ? onClose : onOpen}
           />
-          <Image
-            src={Logo}
-            alt="Logo"
-            w={'200px'}
-            h={'90px'}
-            ml={[0, 5]}
-            mr={[7, 0]}
-          />
+          <Link to={'/koc'}>
+            <Image
+              src={Logo}
+              alt="Logo"
+              w={'200px'}
+              h={'90px'}
+              ml={[0, 5]}
+              mr={[7, 0]}
+            />
+          </Link>
           <Box
             w={['100%', '70vw']}
             h={'100%'}

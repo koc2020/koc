@@ -81,7 +81,9 @@ const SignatureProduct = () => {
             </ListItem>
           </List>
           <Box color={'orange.500'}>
-            <Link to={'/product/AutomaticSteamBoiler'}>Know More {'>>>'}</Link>
+            <Link to={'/koc/product/AutomaticSteamBoiler'}>
+              Know More {'>>>'}
+            </Link>
           </Box>
         </Box>
       </Box>
