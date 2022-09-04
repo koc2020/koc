@@ -2,7 +2,6 @@ import {
   Box,
   HStack,
   Image,
-  Link,
   IconButton,
   Text,
   Stack,
@@ -16,21 +15,22 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { FiDownload } from 'react-icons/fi';
 import pdf from '../../assets/documents/KOC__Phamplet.pdf';
+import { Link } from 'react-router-dom';
 
 const Links = ['Home', 'Profile', 'Product', 'About', 'Contact'];
 
 const NavLink = ({ children }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-    }}
-    href={`/${children}`}
-    className={styles.navhover}
-  >
-    {children}
+  <Link to={`/${children}`} className={styles.navhover}>
+    <Text
+      px={2}
+      py={1}
+      rounded={'md'}
+      _hover={{
+        textDecoration: 'none',
+      }}
+    >
+      {children}
+    </Text>
   </Link>
 );
 
