@@ -8,7 +8,7 @@ const WhyUs = () => {
   return (
     <Box p={5} paddingInline={{ base: 1, md: '75px' }}>
       <Box>
-        <Text fontSize={'xx-large'} ml={[, 5]}>
+        <Text fontSize={'xx-large'} ml={[1, 5]}>
           Why Us
         </Text>
         <Box
