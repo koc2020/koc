@@ -81,7 +81,7 @@ const SignatureProduct = () => {
             </ListItem>
           </List>
           <Box color={'orange.500'}>
-            <Link to={'Product/product/AutomaticSteamBoiler'}>
+            <Link to={'product/category/AutomaticSteamBoiler'}>
               Know More {'>>>'}
             </Link>
           </Box>
