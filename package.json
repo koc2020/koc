@@ -2,7 +2,7 @@
   "name": "koc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://koc2020.github.io/koc/",
+  "homepage": "https://kocequips.github.io/koc/",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.4",
     "@chakra-ui/react": "^2.2.1",

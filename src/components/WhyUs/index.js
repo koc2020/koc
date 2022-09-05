@@ -6,9 +6,9 @@ import styles from './styles.module.css';
 
 const WhyUs = () => {
   return (
-    <Box p={5} paddingInline={[0, '75px']}>
+    <Box p={5} paddingInline={{ base: 1, md: '75px' }}>
       <Box>
-        <Text fontSize={'xx-large'} ml={[0, 5]}>
+        <Text fontSize={'xx-large'} ml={[, 5]}>
           Why Us
         </Text>
         <Box
@@ -24,7 +24,7 @@ const WhyUs = () => {
         w={'100%'}
         justifyContent={'center'}
         alignContent={'center'}
-        p={[0, 5]}
+        p={{ base: 1, md: 5 }}
         pt={5}
       >
         <Box className={styles.flexitem1} mr={10}>

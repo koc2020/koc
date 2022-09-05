@@ -29,9 +29,13 @@ const property = [
 
 const LatestNews = () => {
   return (
-    <Box px={[1, 10]} pt={[1, 10]} paddingInline={'75px'}>
+    <Box
+      px={{ base: 1, md: 10 }}
+      pt={{ base: 1, md: 10 }}
+      paddingInline={'75px'}
+    >
       <Box>
-        <Text fontSize={'xx-large'} ml={[1, 10]}>
+        <Text fontSize={'xx-large'} ml={{ base: 1, md: 10 }}>
           Latest Update
         </Text>
         <Box
@@ -45,7 +49,7 @@ const LatestNews = () => {
       <SimpleGrid
         minChildWidth={{ base: '300px', md: '400px' }}
         spacing="40px"
-        p={[0, 5]}
+        p={{ base: 0, md: 5 }}
         pt={5}
       >
         {property.map((ele, index) => (
