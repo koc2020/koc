@@ -1,0 +1,50 @@
+@import url("slick-carousel/slick/slick.css");
+@import url("slick-carousel/slick/slick-theme.css");
+.slide img {
+  margin: 0 auto;
+}
+
+.slide {
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  opacity: 0.6;
+}
+
+.activeSlide {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
+}
+
+.arrow {
+  background-color: #f6821f;
+  padding: 5px;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.arrow svg {
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+}
+
+.arrow svg:hover {
+  color: #68edff;
+}
+
+.next {
+  right: 0%;
+  top: 50%;
+}
+
+.prev {
+  left: 0%;
+  top: 50%;
+}
+/*# sourceMappingURL=product_display_style.css.map */
