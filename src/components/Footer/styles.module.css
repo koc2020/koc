@@ -7,13 +7,6 @@
 }
 
 .background {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 6vh 0;
   background-color: rgba(40, 40, 40, 0.7);
 }
 /*# sourceMappingURL=styles.module.css.map */

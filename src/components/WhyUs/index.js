@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 
 const WhyUs = () => {
   return (
-    <Box p={5} paddingInline={{ base: 1, md: '75px' }}>
+    <Box px={{ base: '50px', lg: 10 }} pt={{ base: 1, lg: 10 }}>
       <Box>
         <Text fontSize={'xx-large'} ml={[1, 5]}>
           Why Us
@@ -46,7 +46,7 @@ const WhyUs = () => {
         </Box>
         <Fade right>
           <Box
-            w={{ base: '100%', md: 'max-content' }}
+            w={{ base: '100%', lg: 'max-content' }}
             display={'flex'}
             justifyContent={'center'}
             alignItems={'center'}

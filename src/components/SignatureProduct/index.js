@@ -8,9 +8,9 @@ import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 const SignatureProduct = () => {
   return (
-    <Box p={[1, 10]} paddingInline={'75px'} zIndex={5}>
+    <Box px={{ base: '50px', lg: 10 }} pt={{ base: 1, lg: 10 }} zIndex={5}>
       <Box>
-        <Text fontSize={'xx-large'} ml={[1, 10]}>
+        <Text fontSize={{ base: 'x-large', lg: 'xx-large' }} ml={[1, 10]}>
           Signature Product: Automatic Steam Boiler
         </Text>
         <Box
@@ -26,11 +26,11 @@ const SignatureProduct = () => {
         w={'100%'}
         justifyContent={'center'}
         alignContent={'center'}
-        p={[0, 5]}
+        p={{ base: 0, lg: 5 }}
         pt={5}
       >
         <Box
-          w={{ base: '100%', md: 'max-content' }}
+          w={{ base: '100%', lg: 'max-content' }}
           display={'flex'}
           justifyContent={'center'}
           alignItems={'center'}
@@ -38,7 +38,7 @@ const SignatureProduct = () => {
         >
           <Image src={ASB} alt="Logo" w={'250px'} h={'320px'} />
         </Box>
-        <Box className={styles.flexitem1} m={5}>
+        <Box className={styles.flexitem1} m={{ base: 0, lg: 5 }} my={5}>
           <Text>
             This is an unique product from KOC. It is specially designed for
             Commercial {'&'} Industrial Kitchen space produce{' '}
@@ -81,7 +81,7 @@ const SignatureProduct = () => {
             </ListItem>
           </List>
           <Box color={'orange.500'}>
-            <Link to={'/koc/product/AutomaticSteamBoiler'}>
+            <Link to={'product/AutomaticSteamBoiler'}>
               Know More {'>>>'}
             </Link>
           </Box>
@@ -94,7 +94,12 @@ const SignatureProduct = () => {
         color={'orange.500'}
       >
         <FaQuoteLeft />
-        <Text px={1} fontSize={'x-large'}>
+        <Text
+          px={1}
+          w={'fit-content'}
+          textAlign={'center'}
+          fontSize={{ base: 'large', lg: 'x-large' }}
+        >
           Meet all safety line with precautionary measures
         </Text>
         <FaQuoteRight />

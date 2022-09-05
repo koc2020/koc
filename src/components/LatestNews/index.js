@@ -29,13 +29,12 @@ const property = [
 
 const LatestNews = () => {
   return (
-    <Box
-      px={{ base: 1, md: 10 }}
-      pt={{ base: 1, md: 10 }}
-      paddingInline={'75px'}
-    >
+    <Box px={{ base: '50px', lg: 10 }} pt={{ base: 1, lg: 10 }}>
       <Box>
-        <Text fontSize={'xx-large'} ml={{ base: 1, md: 10 }}>
+        <Text
+          fontSize={{ base: 'x-large', lg: 'xx-large' }}
+          ml={{ base: 1, md: 10 }}
+        >
           Latest Update
         </Text>
         <Box
@@ -47,15 +46,15 @@ const LatestNews = () => {
         ></Box>
       </Box>
       <SimpleGrid
-        minChildWidth={{ base: '300px', md: '400px' }}
-        spacing="40px"
+        minChildWidth={{ base: '250px', lg: '400px' }}
+        spacing="10px"
         p={{ base: 0, md: 5 }}
         pt={5}
       >
         {property.map((ele, index) => (
           <Box
             key={index}
-            w={{ base: '300px', md: '400px' }}
+            w={{ base: '250px', lg: '400px' }}
             borderWidth="1px"
             borderRadius="lg"
             overflow="hidden"
@@ -72,7 +71,7 @@ const LatestNews = () => {
               <Box display="flex" alignItems="baseline">
                 <Box
                   mr={2}
-                  fontSize={'large'}
+                  fontSize={{ base: 'md', lg: 'large' }}
                   fontWeight="semibold"
                   as="h4"
                   lineHeight="tight"
@@ -85,7 +84,7 @@ const LatestNews = () => {
                 </Badge>
               </Box>
 
-              <Box>{ele.description}</Box>
+              <Box fontSize={{ base: 'sm', lg: 'md' }}>{ele.description}</Box>
             </Box>
           </Box>
         ))}

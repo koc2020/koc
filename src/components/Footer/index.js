@@ -67,7 +67,14 @@ const Footer = () => {
       )}
       <Box>
         <div className={styles.container}>
-          <Box w={'100%'} h={'inherit'} className={styles.background}>
+          <Box
+            w={'100%'}
+            display={'flex'}
+            justifyContent={'center'}
+            py={'6vh'}
+            h={'inherit'}
+            className={styles.background}
+          >
             <Box w={'20vw'} display={{ base: 'none', md: 'block' }}>
               <Text
                 fontSize={'x-large'}
@@ -78,19 +85,19 @@ const Footer = () => {
                 UseFul Links
               </Text>
               <VStack mt={5} color={'white'} h={'inherit'} fontSize={'larger'}>
-                <Link href="/koc">
+                <Link href="/">
                   <Text cursor={'pointer'}>Home</Text>
                 </Link>
-                <Link href={'/koc/profile'}>
+                <Link href={'/profile'}>
                   <Text cursor={'pointer'}>Profile</Text>
                 </Link>
-                <Link href="/koc/product">
+                <Link href="/product">
                   <Text cursor={'pointer'}>Products</Text>
                 </Link>
-                <Link href="/koc/about">
+                <Link href="/about">
                   <Text cursor={'pointer'}>About Us</Text>
                 </Link>
-                <Link href="/koc/contact">
+                <Link href="/contact">
                   <Text cursor={'pointer'}>Contact</Text>
                 </Link>
               </VStack>
