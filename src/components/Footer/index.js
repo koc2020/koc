@@ -14,6 +14,7 @@ import { MdEmail } from 'react-icons/md';
 import { IoIosArrowUp } from 'react-icons/io';
 import { GrLinkedinOption } from 'react-icons/gr';
 import { Fade } from 'react-reveal';
+import { Link as Lt } from 'react-router-dom';
 
 const Footer = () => {
   const [show, setshow] = useState(false);
@@ -85,21 +86,21 @@ const Footer = () => {
                 UseFul Links
               </Text>
               <VStack mt={5} color={'white'} h={'inherit'} fontSize={'larger'}>
-                <Link href="/">
+                <Lt to="/">
                   <Text cursor={'pointer'}>Home</Text>
-                </Link>
-                <Link href={'/profile'}>
+                </Lt>
+                <Lt to={'profile'}>
                   <Text cursor={'pointer'}>Profile</Text>
-                </Link>
-                <Link href="/product">
+                </Lt>
+                <Lt to="product/ColdEquips">
                   <Text cursor={'pointer'}>Products</Text>
-                </Link>
-                <Link href="/about">
+                </Lt>
+                <Lt to="about">
                   <Text cursor={'pointer'}>About Us</Text>
-                </Link>
-                <Link href="/contact">
+                </Lt>
+                <Lt to="contact">
                   <Text cursor={'pointer'}>Contact</Text>
-                </Link>
+                </Lt>
               </VStack>
             </Box>
             <Stack direction={'row'}>
@@ -174,24 +175,27 @@ const Footer = () => {
               </Box>
             </Stack>
             <Box w={{ md: '50vw', lg: '30vw' }} pt={10}>
-              <Text
-                fontFamily={'fontastique'}
-                fontSize={{ base: '20px', md: '30px', lg: '40px' }}
-                color={'#f6921f'}
-                textAlign={'end'}
-                textDecoration={'white underline'}
-                textUnderlineOffset={{ base: '6px', md: '9px', lg: '12px' }}
-              >
-                Kitchen <span style={{ color: 'white' }}>'O'</span> Cant Equips
-              </Text>
-              <Text
-                fontFamily={'epoco'}
-                fontSize={{ base: '10px', md: 'sm', lg: 'lg' }}
-                color={'white'}
-                textAlign={'end'}
-              >
-                Manufacturers of Commerical Kitchen Equipments
-              </Text>
+              <Lt to={'/'}>
+                <Text
+                  fontFamily={'fontastique'}
+                  fontSize={{ base: '20px', md: '30px', lg: '40px' }}
+                  color={'#f6921f'}
+                  textAlign={'end'}
+                  textDecoration={'white underline'}
+                  textUnderlineOffset={{ base: '6px', md: '9px', lg: '12px' }}
+                >
+                  Kitchen <span style={{ color: 'white' }}>'O'</span> Cant
+                  Equips
+                </Text>
+                <Text
+                  fontFamily={'epoco'}
+                  fontSize={{ base: '10px', md: 'sm', lg: 'lg' }}
+                  color={'white'}
+                  textAlign={'end'}
+                >
+                  Manufacturers of Commerical Kitchen Equipments
+                </Text>
+              </Lt>
               <Box
                 mt={7}
                 w={'100%'}

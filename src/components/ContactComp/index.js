@@ -3,7 +3,7 @@ import { Box, Text } from '@chakra-ui/react';
 
 const ContactComp = () => {
   return (
-    <Box p={[5, 10]} paddingInline={'75px'}>
+    <Box px={{ base: 5, lg: 10 }} pt={{ base: 1, lg: 10 }}>
       <Box display={{ base: 'block', md: 'flex' }}>
         <Box w={{ base: '100%', md: '50%' }} h={'100%'}>
           <Box>
@@ -19,7 +19,7 @@ const ContactComp = () => {
                 borderRadius={'full'}
               ></Box>
             </Box>
-            <Text p={[0, 5]} pt={5} pb={5} fontSize={'medium'}>
+            <Text p={{ base: 0, lg: 5 }} pt={5} pb={5} fontSize={'medium'}>
               <b>Kitchen 'O' Cant Equips</b>
               <br />
               74, Thendral Nagar, Manali Main Road, Near Thiruthangal Nadar
@@ -29,7 +29,7 @@ const ContactComp = () => {
           </Box>
           <Box>
             <Box>
-              <Text fontSize={'x-large'} ml={[0, 5]}>
+              <Text fontSize={'x-large'} ml={{ base: 0, lg: 5 }}>
                 <b>Contact</b>
               </Text>
               <Box
@@ -40,7 +40,12 @@ const ContactComp = () => {
                 borderRadius={'full'}
               ></Box>
             </Box>
-            <Text paddingInline={[0, 5]} pt={5} pb={1} fontSize={'medium'}>
+            <Text
+              paddingInline={{ base: 0, lg: 5 }}
+              pt={5}
+              pb={1}
+              fontSize={'medium'}
+            >
               +91 98409 40123
             </Text>
             <Text paddingInline={[0, 5]} pt={1} pb={5} fontSize={'medium'}>

@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 
 const Product = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
   return (
     <div>

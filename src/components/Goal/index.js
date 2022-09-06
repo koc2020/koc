@@ -4,9 +4,9 @@ import { TiArrowRightThick } from 'react-icons/ti';
 
 const Goal = () => {
   return (
-    <Box p={5} paddingInline={'75px'}>
+    <Box px={{ base: '50px', lg: 10 }} pt={{ base: 1, lg: 10 }}>
       <Box>
-        <Text fontSize={'xx-large'} ml={[1, 5]}>
+        <Text fontSize={'xx-large'} ml={{ base: 1, lg: 5 }}>
           Our Goal
         </Text>
         <Box
@@ -17,7 +17,7 @@ const Goal = () => {
           borderRadius={'full'}
         ></Box>
       </Box>
-      <List p={5} spacing={3}>
+      <List p={{ base: 1, lg: 5 }} spacing={3}>
         <ListItem>
           <ListIcon as={TiArrowRightThick} color="orange.500" />
           To expand our business knowledge to anchor a strong position in the

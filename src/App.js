@@ -21,7 +21,7 @@ import SSelectricals from './components/Products/sselectricals';
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

@@ -8,7 +8,12 @@ import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 const SignatureProduct = () => {
   return (
-    <Box px={{ base: '50px', lg: 10 }} pt={{ base: 1, lg: 10 }} zIndex={5}>
+    <Box
+      px={{ base: '50px', lg: 10 }}
+      pt={{ base: 1, lg: 10 }}
+      zIndex={5}
+      className={styles.background}
+    >
       <Box>
         <Text fontSize={{ base: 'x-large', lg: 'xx-large' }} ml={[1, 10]}>
           Signature Product: Automatic Steam Boiler

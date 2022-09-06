@@ -19,7 +19,7 @@ import { Link } from 'react-router-dom';
 
 const Links = ['Home', 'Profile', 'Product', 'About', 'Contact'];
 
-const NavLink = ({ children }) =>
+const NavLink = ({ children, onClose }) =>
   children === 'Product' ? (
     <Link to={`product/ColdEquips`} className={styles.navhover}>
       <Text
@@ -29,6 +29,7 @@ const NavLink = ({ children }) =>
         _hover={{
           textDecoration: 'none',
         }}
+        onClick={onClose}
       >
         {children}
       </Text>
@@ -42,6 +43,7 @@ const NavLink = ({ children }) =>
         _hover={{
           textDecoration: 'none',
         }}
+        onClick={onClose}
       >
         {children}
       </Text>
@@ -139,7 +141,7 @@ const Navbar = () => {
         <Box pb={4} display={{ md: 'none' }}>
           <Stack as={'nav'} spacing={4}>
             {Links.map(link => (
-              <NavLink key={link}>{link}</NavLink>
+              <NavLink key={link} onClose={onClose}>{link}</NavLink>
             ))}
           </Stack>
         </Box>

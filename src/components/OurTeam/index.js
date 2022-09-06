@@ -5,9 +5,9 @@ import { Fade } from 'react-reveal';
 
 const Team = () => {
   return (
-    <Box p={5} paddingInline={'75px'}>
+    <Box px={{ base: '50px', lg: 10 }} pt={{ base: 1, lg: 10 }}>
       <Box>
-        <Text fontSize={'xx-large'} ml={[1, 5]}>
+        <Text fontSize={'xx-large'} ml={{ base: 1, lg: 5 }}>
           Our Team
         </Text>
         <Box
@@ -25,7 +25,7 @@ const Team = () => {
           center of attention to deliver a satisfying outcome to our customers.
         </Text>
         <Fade bottom>
-          <List p={[1, 5]} spacing={3}>
+          <List p={{ base: 1, lg: 5 }} spacing={3}>
             <ListItem>
               <ListIcon as={TiArrowRightThick} color="orange.500" />
               Meet product quality.
