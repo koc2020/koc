@@ -112,7 +112,7 @@ const ProductDisplay = () => {
               className={idx === imageIndex ? 'slide activeSlide' : 'slide'}
             >
               {idx === imageIndex ? (
-                <Link to={`category/${img.link}`} title={'Click Me'}>
+                <Link to={`${img.link}`} title={'Click Me'}>
                   <Image
                     src={img.img}
                     alt={img.name}

@@ -12,7 +12,8 @@ import trolley from '../../assets/images/equip/trolleys.png';
 import washingequipment from '../../assets/images/equip/washing equipment.png';
 import pantry from '../../assets/images/equip/pantry and fastfood.png';
 import './product_display_style.css';
-import { Box, Image, Text, Link } from '@chakra-ui/react';
+import { Box, Image, Text } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 const ProductDisplay = () => {
   const images = [
@@ -111,7 +112,7 @@ const ProductDisplay = () => {
               className={idx === imageIndex ? 'slide activeSlide' : 'slide'}
             >
               {idx === imageIndex ? (
-                <Link href={`product/category/${img.link}`} title={'Click Me'}>
+                <Link to={`product/${img.link}`} title={'Click Me'}>
                   <Image
                     src={img.img}
                     alt={img.name}

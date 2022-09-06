@@ -7,7 +7,6 @@ import {
   Stack,
   useDisclosure,
   Flex,
-  Link,
 } from '@chakra-ui/react';
 import React from 'react';
 import Logo from '../../assets/images/Logo.png';
@@ -16,23 +15,38 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { FiDownload } from 'react-icons/fi';
 import pdf from '../../assets/documents/KOC__Phamplet.pdf';
+import { Link } from 'react-router-dom';
 
 const Links = ['Home', 'Profile', 'Product', 'About', 'Contact'];
 
-const NavLink = ({ children }) => (
-  <Link href={`/${children}`} className={styles.navhover}>
-    <Text
-      px={2}
-      py={1}
-      rounded={'md'}
-      _hover={{
-        textDecoration: 'none',
-      }}
-    >
-      {children}
-    </Text>
-  </Link>
-);
+const NavLink = ({ children }) =>
+  children === 'Product' ? (
+    <Link to={`product/ColdEquips`} className={styles.navhover}>
+      <Text
+        px={2}
+        py={1}
+        rounded={'md'}
+        _hover={{
+          textDecoration: 'none',
+        }}
+      >
+        {children}
+      </Text>
+    </Link>
+  ) : (
+    <Link to={`/${children}`} className={styles.navhover}>
+      <Text
+        px={2}
+        py={1}
+        rounded={'md'}
+        _hover={{
+          textDecoration: 'none',
+        }}
+      >
+        {children}
+      </Text>
+    </Link>
+  );
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

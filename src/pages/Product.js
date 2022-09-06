@@ -1,36 +1,18 @@
-import React from 'react';
-import Pantry from '../components/Products/Pantry';
+import React, { useEffect } from 'react';
 import ProductDisplay from '../components/ProductDisplay';
-import { useParams } from 'react-router-dom';
-import Trolley from '../components/Products/trolleys';
-import Ppe from '../components/Products/PPE';
-import HotEquip from '../components/Products/HotEquip';
-import SSelectricals from '../components/Products/sselectricals';
-import Coldequip from '../components/Products/ColdEquip';
-import WashEquip from '../components/Products/WashEquip';
-import Exhaust from '../components/Products/Exhaust';
-import Display from '../components/Products/Display';
+import { Box } from '@chakra-ui/react';
+import { Outlet } from 'react-router-dom';
 
 const Product = () => {
-  let { product } = useParams();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <ProductDisplay />
-      {
-        {
-          Pantry: <Pantry />,
-          Trolley: <Trolley />,
-          Ppe: <Ppe />,
-          HotEquips: <HotEquip />,
-          Signatureequips: <SSelectricals />,
-          ColdEquips: <Coldequip />,
-          WashEquips: <WashEquip />,
-          Exhaust: <Exhaust />,
-          Display: <Display />,
-          AutomaticSteamBoiler: <SSelectricals />,
-          undefined: <Coldequip />,
-        }[product]
-      }
+      <Box>
+        <Outlet />
+      </Box>
     </div>
   );
 };
