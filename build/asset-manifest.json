@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab6b79b4.css",
-    "main.js": "/static/js/main.bddbee8a.js",
+    "main.css": "/static/css/main.c2b36854.css",
+    "main.js": "/static/js/main.a6fb52bb.js",
     "static/media/KOC__Phamplet.pdf": "/static/media/KOC__Phamplet.95f6575626642577c8a7.pdf",
     "static/media/AutomaticSteamBoiler.jpg": "/static/media/AutomaticSteamBoiler.d99c792ce4d49158b0aa.jpg",
     "static/media/straight glass counter.png": "/static/media/straight glass counter.333f505bb0ac8fd7b954.png",
@@ -76,11 +76,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.ab6b79b4.css.map": "/static/css/main.ab6b79b4.css.map",
-    "main.bddbee8a.js.map": "/static/js/main.bddbee8a.js.map"
+    "main.c2b36854.css.map": "/static/css/main.c2b36854.css.map",
+    "main.a6fb52bb.js.map": "/static/js/main.a6fb52bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab6b79b4.css",
-    "static/js/main.bddbee8a.js"
+    "static/css/main.c2b36854.css",
+    "static/js/main.a6fb52bb.js"
   ]
 }
